@@ -1,6 +1,0 @@
-Here I will describe how my code works, this script is for a fully functioning character controller
-
-The code decides movement and how the character looks around. I decided to make it so the character can only move forward and backwards so the W and S key are used. The code “transform.position += transform.forward *Time.deltaTime *movementSpeed * acceleration” this means that the characters position will move forward over time to the power of movement speed which is set at 5 times the acceleration which is pre-set at 0.1f. This will increase gradually until movementSpeed + acceleration is larger than maxSpeed allowing the game to include acceleration.
-The S button has the same code except the after transform.position, it says “-=” instead. This is because there is no variable for transform.backward, so I had to do it the math equation but reverse it.
-After this I made the D and A key move clockwise and anticlockwise to the power I set which was 100* for clockwise and -100* for anticlockwise per second allowing the character to move quickly.
-Finally, the character can move their rotation with the mouse too, going up and down too so they have full view. “Float x = Input.GetAxis(“Mouse X”);” means that the axis of the mouse moving on the x axis will move the position of the character through “transform.Rotate(y, x, 0);
