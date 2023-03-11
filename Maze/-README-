@@ -1,1 +1,1 @@
-
+During this programme, I used the character controller I previously created to make a maze. This primarily uses triggers and events to proceed. For example when a user touches a specific item, the users collectible count will increase and a pop up will say they found a collectible. If they reach the end the game will tell them the game has ended, but if they find all collectibles before then the game will tell them all collectibles have been found too.
